@@ -1,0 +1,21 @@
+title: "Laboratorios de Programación"
+description: "Documentación de laboratorios POO"
+theme: just-the-docs
+
+# Configuración de navegación
+just_the_docs:
+  navigation:
+    - title: Inicio
+      url: /
+    - title: Laboratorio 1 - POO
+      url: /index/
+
+# Para que los títulos aparezcan en la barra lateral
+nav_external_links: []
+nav_sort: case_sensitive
+
+# Configuración de búsqueda
+search_enabled: true
+search:
+  heading_level: 3
+  preview_words: 10
