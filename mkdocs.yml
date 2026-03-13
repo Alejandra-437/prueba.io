@@ -1,0 +1,9 @@
+site_name: Laboratorios de Programación
+site_url: https://alejandra-437.github.io/POO/
+docs_dir: docs
+
+theme:
+  name: material
+
+nav:
+  - Programando Orientado a Objetos: index.md
