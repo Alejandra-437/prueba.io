@@ -5,6 +5,8 @@ on:
     branches: [main] # o master, según tu rama por defecto
   workflow_dispatch: # permite lanzarlo a mano desde la pestaña Actions
 
+permissions:
+  contents: write # necesario para hacer push a gh-pages
 jobs:
   build:
     runs-on: ubuntu-latest
