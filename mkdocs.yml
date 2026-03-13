@@ -7,16 +7,17 @@ theme:
   features:
     - navigation.sections # agrupa por secciones en la barra izquierda
     - navigation.expand # deja todo expandido
-    - toc.integrate # mete el índice (ToC) de la página en la barra izquierd
+    - toc.integrate # mete el indice (ToC) de la pagina en la barra izquierda
 nav:
   - Inicio: index.md
   - Laboratorio 1:
-      - Introduccion: index.md
-      - Que es POO: index.md#que-es-poo
-      - Que es una clase: index.md#que-es-una-clase
-      - Constructores: index.md#constructores
-      - Modificadores de acceso: index.md#modificadores-de-acceso
-      - Encapsulamiento: index.md#encapsulamiento
-      - Uso de this y super: index.md#uso-de-this-y-super
-      - Que es un objeto: index.md#que-es-un-objeto
-      - Anexos: index.md#anexos
+      - Introduccion: laboratorio_1/introduccion.md
+      - Que es POO: laboratorio_1/que-es-poo.md
+      - Que es una clase: laboratorio_1/que-es-una-clase.md
+      - Constructores: laboratorio_1/constructores.md
+      - Modificadores de acceso: laboratorio_1/modificadores-de-acceso.md
+      - Encapsulamiento: laboratorio_1/encapsulamiento.md
+      - Uso de this y super: laboratorio_1/uso-de-this-y-super.md
+      - Implementacion: laboratorio_1/implementacion.md
+      - Que es un objeto: laboratorio_1/que-es-un-objeto.md
+      - Anexos: laboratorio_1/anexos.md
