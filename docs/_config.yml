@@ -1,6 +1,6 @@
 title: "Laboratorios de Programación"
 description: "Documentación de laboratorios POO"
-theme: just-the-docs
+remote_theme: just-the-docs
 
 # Configuración de navegación
 just_the_docs:
