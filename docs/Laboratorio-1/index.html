@@ -1,16 +1,15 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programación Orientada a Objetos: Laboratorio 1</title>
+<title>Programación Orientada a Objetos: Laboratorio 1</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__left">
+<div class="stackedit__left">
     <div class="stackedit__toc">
       
 <ul>
@@ -18,8 +17,9 @@
 <ul>
 <li><a href="#¿qué-es-poo">¿Qué es POO?</a></li>
 <li><a href="#¿qué-es-una-clase">¿Qué es una clase?</a></li>
-<li><a href="#implementando-lo-que-hemos-aprendido">Implementando lo que hemos aprendido</a></li>
 <li><a href="#¿qué-es-un-objeto">¿Qué es un objeto?</a></li>
+<li><a href="#implementando-lo-que-hemos-aprendido">Implementando lo que hemos aprendido</a></li>
+
 <li><a href="#cierre">Cierre</a></li>
 </ul>
 </li>
@@ -311,6 +311,47 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
 <span class="token punctuation">}</span>
 
 </code></pre>
+<h2 id="¿qué-es-un-objeto">¿Qué es un objeto?</h2>
+<p><img src="../imagenes/Laboratorio_1/7.jpeg" alt="¿Qué es un objeto?"></p>
+<p>Un objeto es una instancia concreta de una clase.</p>
+<h3 id="instanciar-una-clase">Instanciar una clase</h3>
+<p><img src="../imagenes/Laboratorio_1/8.png" alt="Instanciacion de una clase"></p>
+<p>Declarar una referencia no crea el objeto; se crea con <code>new</code>.</p>
+<pre class=" language-java"><code class="prism  language-java">
+Mascota  perro<span class="token punctuation">;</span>
+
+perro <span class="token operator">=</span> <span class="token keyword">new</span>  <span class="token class-name">Mascota</span><span class="token punctuation">(</span><span class="token string">"Spike"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+<h3 id="inicializar-y-usar-un-objeto">Inicializar y usar un objeto</h3>
+<pre class=" language-java"><code class="prism  language-java">
+<span class="token keyword">public</span>  <span class="token keyword">class</span>  <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+
+  
+
+<span class="token keyword">public</span>  <span class="token keyword">static</span>  <span class="token keyword">void</span>  <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+Mascota  perro <span class="token operator">=</span> <span class="token keyword">new</span>  <span class="token class-name">Mascota</span><span class="token punctuation">(</span><span class="token string">"Spike"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+perro<span class="token punctuation">.</span><span class="token function">mostrarInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+  
+
+<span class="token punctuation">}</span>
+
+</code></pre>
+<p><strong>Salida</strong></p>
+<hr>
+<pre class=" language-shell"><code class="prism  language-shell">
+Nombre:  Spike
+
+Edad:  3
+
+¿Está  durmiendo?  No
+
+</code></pre>
 <h2 id="implementando-lo-que-hemos-aprendido">Implementando lo que hemos aprendido</h2>
 <pre class=" language-java"><code class="prism  language-java">
   
@@ -378,47 +419,6 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
   
 
 </code></pre>
-<h2 id="¿qué-es-un-objeto">¿Qué es un objeto?</h2>
-<p><img src="../imagenes/Laboratorio_1/7.jpeg" alt="¿Qué es un objeto?"></p>
-<p>Un objeto es una instancia concreta de una clase.</p>
-<h3 id="instanciar-una-clase">Instanciar una clase</h3>
-<p><img src="../imagenes/Laboratorio_1/8.png" alt="Instanciacion de una clase"></p>
-<p>Declarar una referencia no crea el objeto; se crea con <code>new</code>.</p>
-<pre class=" language-java"><code class="prism  language-java">
-Mascota  perro<span class="token punctuation">;</span>
-
-perro <span class="token operator">=</span> <span class="token keyword">new</span>  <span class="token class-name">Mascota</span><span class="token punctuation">(</span><span class="token string">"Spike"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-</code></pre>
-<h3 id="inicializar-y-usar-un-objeto">Inicializar y usar un objeto</h3>
-<pre class=" language-java"><code class="prism  language-java">
-<span class="token keyword">public</span>  <span class="token keyword">class</span>  <span class="token class-name">Main</span> <span class="token punctuation">{</span>
-
-  
-
-<span class="token keyword">public</span>  <span class="token keyword">static</span>  <span class="token keyword">void</span>  <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-Mascota  perro <span class="token operator">=</span> <span class="token keyword">new</span>  <span class="token class-name">Mascota</span><span class="token punctuation">(</span><span class="token string">"Spike"</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-perro<span class="token punctuation">.</span><span class="token function">mostrarInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token punctuation">}</span>
-
-  
-
-<span class="token punctuation">}</span>
-
-</code></pre>
-<p><strong>Salida</strong></p>
-<hr>
-<pre class=" language-shell"><code class="prism  language-shell">
-Nombre:  Spike
-
-Edad:  3
-
-¿Está  durmiendo?  No
-
-</code></pre>
 <h2 id="cierre">Cierre</h2>
 <p>POO permite escribir codigo mas claro, reutilizable y facil de mantener mediante clases y objetos.</p>
 <h1 id="anexos">Anexos</h1>
@@ -448,3 +448,5 @@ Edad:  3
 </body>
 
 </html>
+
+
